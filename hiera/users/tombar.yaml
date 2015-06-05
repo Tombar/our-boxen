@@ -1,0 +1,27 @@
+---
+cask_apps:
+ - flux
+ - caffeine
+ - transmission
+ - mactracker
+ - controlplane
+ - daisydisk
+ - shortcat
+ - little-snitch
+ - intellij-idea
+ - virtualbox
+ - tunnelblick
+ - macvim
+ - limechat
+ - skype
+ - chicken
+ - cord
+ - filezilla
+ - packet-peeper
+ - firefox
+ - chrome
+ - libreoffice
+ - vlc
+ - osxfuse
+ - java
+

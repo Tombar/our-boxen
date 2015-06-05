@@ -65,3 +65,11 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "3.0.3"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+github "iterm2",      "1.2.4"
+github "vagrant",     "3.3.0
+github "tmux",        "1.0.2"
+github "geoip",       "1.0.0"
+github "ctags",       "1.0.0"
+github "bash", 	      "1.2.0"
+github "fish",       "1.0.0"
