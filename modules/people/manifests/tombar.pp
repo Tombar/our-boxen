@@ -72,18 +72,7 @@ class people::tombar{
   include geoip
   include tmux
 
-#  include vim
-#  vim::bundle { [
-#    'scrooloose/syntastic',
-#    'scrooloose/nerdtree',
-#    'tpope/vim-fugitive',
-#    'godlygeek/tabular',
-#    'rizzatti/dash.vim',
-#    'rodjek/vim-puppet',
-#    'evanmiller/nginx-vim-syntax',
-#    'derekwyatt/vim-scala'
-#  ]:
-#  }
+  include macvim
 
   include fish
 
