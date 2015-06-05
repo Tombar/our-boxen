@@ -66,8 +66,8 @@ class people::tombar{
   }
   vagrant::plugin { ['cachier', 'r10k', 'hostmaster']:}
 
-  include bash
-  include bash::completion
+  # include bash
+  # include bash::completion
   include ctags
   include geoip
   include tmux
