@@ -92,6 +92,11 @@ class people::tombar{
   git::config::global { 'color.ui': value => 'auto' }
   git::config::global { 'branch.autosetuprebase': value => 'always' }
 
+  # ignore .bundle rbenv implicit gemset folder
+  file { "/Users/${::luser}/.gitignore":
+    content => '.bundle',
+  }
+
   # set a global gitignore file
   git::config::global { 'core.excludesfile ':
     value   => '~/.gitignore',
