@@ -36,12 +36,12 @@ class people::tombar{
 
   include osx::mouse::swipe_between_pages
 
-  boxen::osx_defaults { 'Enable Yosemite Dark theme':
-    user   => $::boxen_user,
-    key    => 'AppleInterfaceTheme',
-    domain => '/Library/Preferences/.GlobalPreferences',
-    value  => 'dark';
-  }
+#  boxen::osx_defaults { 'Enable Yosemite Dark theme':
+#    user   => $::boxen_user,
+#    key    => 'AppleInterfaceTheme',
+#    domain => '/Library/Preferences/.GlobalPreferences',
+#    value  => 'dark';
+#  }
 
   class { 'osx::sound::interface_sound_effects':
     enable => false
@@ -86,6 +86,10 @@ class people::tombar{
   }
 
   include fish
+
+  file { "/Users/${::luser}/.config/fish/config.fish":
+    source => "puppet:///modules/people/config.fish"
+  }
 
   git::config::global { 'user.email': value => 'martinloy.uy@gmail.com' }
   git::config::global { 'user.name': value => 'Martin Loy' }
