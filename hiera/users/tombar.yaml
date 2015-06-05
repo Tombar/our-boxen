@@ -19,7 +19,7 @@ cask_apps:
  - filezilla
  - packet-peeper
  - firefox
- - chrome
+ - google-chrome
  - libreoffice
  - vlc
  - osxfuse
